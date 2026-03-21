@@ -1,0 +1,420 @@
+{
+  "users": {
+    "DhEoy760JAeQ2EEWjR1zpFTBfby2": {
+      "username": "user1",
+      "displayName": "User Một",
+      "email": "23115053122114@sv.ute.udn.vn",
+      "avatarUrl": "",
+      "phone": "0900000001",
+      "createdAt": 1731473400000,
+      "isActive": true
+    },
+    "c4xDGGvQT1Uxs8RXxReBXLs7xDW2": {
+      "username": "user2",
+      "displayName": "User Hai",
+      "email": "khanhsky2k5nam@gmail.com",
+      "avatarUrl": "",
+      "phone": "0900000002",
+      "createdAt": 1731473410000,
+      "isActive": true
+    }
+  },
+  "workspaces": {
+    "ws_1_id": {
+      "name": "Dự án Cá nhân",
+      "description": "Các dự án cá nhân của User Một.",
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473420000
+    },
+    "ws_2_id": {
+      "name": "Dự án Công ty",
+      "description": "Các dự án chung của team.",
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473430000
+    }
+  },
+  "boards": {
+    "board_1_id": {
+      "workspaceId": "ws_1_id",
+      "name": "Kế hoạch Học tập",
+      "description": "Theo dõi việc học tập cá nhân.",
+      "visibility": "private",
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473440000,
+      "isArchived": false,
+      "background": { "type": "color", "value": "#FF9800" }
+    },
+    "board_2_id": {
+      "workspaceId": "ws_2_id",
+      "name": "Dự án Trello Clone (Kan-N)",
+      "description": "Phát triển ứng dụng Kan-N.",
+      "visibility": "workspace",
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473450000,
+      "isArchived": false,
+      "background": { "type": "color", "value": "#0079BF" }
+    },
+    "board_3_id": {
+      "workspaceId": "ws_2_id",
+      "name": "Marketing Sprint Q4",
+      "description": "Kế hoạch marketing cuối năm.",
+      "visibility": "workspace",
+      "createdBy": "c4xDGGvQT1Uxs8RXxReBXLs7xDW2",
+      "createdAt": 1731473460000,
+      "isArchived": false,
+      "background": { "type": "color", "value": "#F44336" }
+    },
+    "board_4_id": {
+      "workspaceId": "ws_1_id",
+      "name": "Bảng Ý tưởng mới",
+      "description": "Nơi ghi lại các ý tưởng đột phá.",
+      "visibility": "private",
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473470000,
+      "isArchived": false,
+      "background": { "type": "color", "value": "#9C27B0" }
+    },
+    "board_5_id": {
+      "workspaceId": "ws_1_id",
+      "name": "Lịch trình cá nhân",
+      "description": "Theo dõi các hoạt động cá nhân hàng ngày.",
+      "visibility": "private",
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473480000,
+      "isArchived": false,
+      "background": { "type": "color", "value": "#4CAF50" }
+    },
+    "board_6_id": {
+      "workspaceId": "ws_2_id",
+      "name": "Quản lý Hợp đồng",
+      "description": "Theo dõi các hợp đồng đang chờ ký.",
+      "visibility": "workspace",
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473490000,
+      "isArchived": false,
+      "background": { "type": "color", "value": "#00BCD4" }
+    },
+    "board_7_id": {
+      "workspaceId": "ws_2_id",
+      "name": "Thiết kế UI/UX",
+      "description": "Bảng thiết kế cho dự án Kan-N.",
+      "visibility": "workspace",
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473500000,
+      "isArchived": false,
+      "background": { "type": "image", "value": "https://images.unsplash.com/photo-1541450259838-89c09424c562" }
+    }
+  },
+  "memberships": {
+    "mem_1_id": {
+      "boardId": "board_1_id",
+      "userId": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "role": "owner",
+      "joinedAt": 1731473440000
+    },
+    "mem_2_id": {
+      "boardId": "board_2_id",
+      "userId": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "role": "owner",
+      "joinedAt": 1731473450000
+    },
+    "mem_3_id": {
+      "boardId": "board_2_id",
+      "userId": "c4xDGGvQT1Uxs8RXxReBXLs7xDW2",
+      "role": "member",
+      "joinedAt": 1731473455000
+    },
+    "mem_4_id": {
+      "boardId": "board_3_id",
+      "userId": "c4xDGGvQT1Uxs8RXxReBXLs7xDW2",
+      "role": "owner",
+      "joinedAt": 1731473460000
+    },
+    "mem_5_id": {
+      "boardId": "board_3_id",
+      "userId": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "role": "member",
+      "joinedAt": 1731473465000
+    },
+    "mem_6_id": {
+      "boardId": "board_4_id",
+      "userId": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "role": "owner",
+      "joinedAt": 1731473470000
+    },
+    "mem_7_id": {
+      "boardId": "board_5_id",
+      "userId": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "role": "owner",
+      "joinedAt": 1731473480000
+    },
+    "mem_8_id": {
+      "boardId": "board_6_id",
+      "userId": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "role": "owner",
+      "joinedAt": 1731473490000
+    },
+    "mem_9_id": {
+      "boardId": "board_7_id",
+      "userId": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "role": "owner",
+      "joinedAt": 1731473500000
+    }
+  },
+  "tags": {
+    "tag_1_id": {
+      "name": "TODO",
+      "color": "#F44336",
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473500000
+    },
+    "tag_2_id": {
+      "name": "SPRINTS",
+      "color": "#2196F3",
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473510000
+    }
+  },
+  "lists": {
+    "list_1_1_id": {
+      "boardId": "board_1_id",
+      "title": "Cần học",
+      "position": 1000.0,
+      "isClosed": false,
+      "createdAt": 1731473600000,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2"
+    },
+    "list_1_2_id": {
+      "boardId": "board_1_id",
+      "title": "Đã học",
+      "position": 2000.0,
+      "isClosed": false,
+      "createdAt": 1731473610000,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2"
+    },
+    "list_2_1_id": {
+      "boardId": "board_2_id",
+      "title": "Backlog",
+      "position": 1000.0,
+      "isClosed": false,
+      "createdAt": 1731473620000,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2"
+    },
+    "list_2_2_id": {
+      "boardId": "board_2_id",
+      "title": "In Progress",
+      "position": 2000.0,
+      "isClosed": false,
+      "createdAt": 1731473630000,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2"
+    },
+    "list_2_3_id": {
+      "boardId": "board_2_id",
+      "title": "Done",
+      "position": 3000.0,
+      "isClosed": false,
+      "createdAt": 1731473640000,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2"
+    },
+    "list_3_1_id": {
+      "boardId": "board_3_id",
+      "title": "Ý tưởng",
+      "position": 1000.0,
+      "isClosed": false,
+      "createdAt": 1731473650000,
+      "createdBy": "c4xDGGvQT1Uxs8RXxReBXLs7xDW2"
+    },
+    "list_3_2_id": {
+      "boardId": "board_3_id",
+      "title": "Đang chạy",
+      "position": 2000.0,
+      "isClosed": false,
+      "createdAt": 1731473660000,
+      "createdBy": "c4xDGGvQT1Uxs8RXxReBXLs7xDW2"
+    },
+    "list_4_1_id": {
+      "boardId": "board_4_id",
+      "title": "Sơ lược",
+      "position": 1000.0,
+      "isClosed": false,
+      "createdAt": 1731473670000,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2"
+    },
+    "list_5_1_id": {
+      "boardId": "board_5_id",
+      "title": "Buổi sáng",
+      "position": 1000.0,
+      "isClosed": false,
+      "createdAt": 1731473680000,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2"
+    },
+    "list_6_1_id": {
+      "boardId": "board_6_id",
+      "title": "Chờ duyệt",
+      "position": 1000.0,
+      "isClosed": false,
+      "createdAt": 1731473690000,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2"
+    },
+    "list_7_1_id": {
+      "boardId": "board_7_id",
+      "title": "Wireframe",
+      "position": 1000.0,
+      "isClosed": false,
+      "createdAt": 1731473700000,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2"
+    }
+  },
+  "cards": {
+    "card_111_id": {
+      "listId": "list_1_1_id",
+      "title": "Học React Native",
+      "description": "",
+      "position": 1000.0,
+      "dueDate": 0,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473700000,
+      "archived": false,
+      "isCompleted": false,
+      "coverImageUrl": null,
+      "attachmentCount": 0,
+      "checklistTotal": 0,
+      "checklistCompleted": 0,
+      "tagIds": {
+        "tag_1_id": true
+      }
+    },
+    "card_112_id": {
+      "listId": "list_1_1_id",
+      "title": "Làm bài tập Firebase",
+      "description": "Kết nối RTDB với Android",
+      "position": 2000.0,
+      "dueDate": 0,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473710000,
+      "archived": false,
+      "isCompleted": false,
+      "coverImageUrl": null,
+      "attachmentCount": 0,
+      "checklistTotal": 0,
+      "checklistCompleted": 0,
+      "tagIds": {
+        "tag_1_id": true
+      }
+    },
+    "card_121_id": {
+      "listId": "list_1_2_id",
+      "title": "Cài đặt Android Studio",
+      "description": "",
+      "position": 1000.0,
+      "dueDate": 0,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473720000,
+      "archived": false,
+      "isCompleted": true,
+      "coverImageUrl": null,
+      "attachmentCount": 0,
+      "checklistTotal": 0,
+      "checklistCompleted": 0
+    },
+    "card_211_id": {
+      "listId": "list_2_1_id",
+      "title": "Thiết kế Model User",
+      "description": "Dựa theo file User.java",
+      "position": 1000.0,
+      "dueDate": 0,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473730000,
+      "archived": false,
+      "isCompleted": false,
+      "coverImageUrl": null,
+      "attachmentCount": 0,
+      "checklistTotal": 0,
+      "checklistCompleted": 0
+    },
+    "card_221_id": {
+      "listId": "list_2_2_id",
+      "title": "Implement AuthRepository",
+      "description": "Xử lý logic đăng nhập, đăng ký",
+      "position": 1000.0,
+      "dueDate": 0,
+      "createdBy": "DhEoy760JAeQ2EEWjR1zpFTBfby2",
+      "createdAt": 1731473740000,
+      "archived": false,
+      "isCompleted": false,
+      "coverImageUrl": null,
+      "attachmentCount": 0,
+      "checklistTotal": 0,
+      "checklistCompleted": 0,
+      "tagIds": {
+        "tag_2_id": true
+      }
+    },
+    "card_311_id": {
+      "listId": "list_3_1_id",
+      "title": "Chạy ads Facebook",
+      "description": "Test 2 chiến dịch",
+      "position": 1000.0,
+      "dueDate": 0,
+      "createdBy": "c4xDGGvQT1Uxs8RXxReBXLs7xDW2",
+      "createdAt": 1731473750000,
+      "archived": false,
+      "isCompleted": false,
+      "coverImageUrl": null,
+      "attachmentCount": 0,
+      "checklistTotal": 0,
+      "checklistCompleted": 0,
+      "tagIds": {
+        "tag_1_id": true,
+        "tag_2_id": true
+      }
+    },
+    "card_321_id": {
+      "listId": "list_3_2_id",
+      "title": "Viết bài blog tuần 1",
+      "description": "Chủ đề: Top 5 tính năng mới",
+      "position": 1000.0,
+      "dueDate": 0,
+      "createdBy": "c4xDGGvQT1Uxs8RXxReBXLs7xDW2",
+      "createdAt": 1731473760000, "archived": false,
+      "isCompleted": false,
+      "coverImageUrl": null,
+      "attachmentCount": 0,
+      "checklistTotal": 0,
+      "checklistCompleted": 0
+    }
+  },
+  "tagCards": {
+    "tag_1_id": {
+      "card_111_id": true,
+      "card_112_id": true,
+      "card_311_id": true
+    },
+    "tag_2_id": {
+      "card_221_id": true,
+      "card_311_id": true
+    }
+  },
+  "backgrounds": [
+    { "type": "color", "value": "#0079BF" },
+    { "type": "color", "value": "#70B500" },
+    { "type": "color", "value": "#F5DD29" },
+    { "type": "color", "value": "#FF9F1A" },
+    { "type": "color", "value": "#EB5A46" },
+    { "type": "color", "value": "#C377E0" },
+    { "type": "color", "value": "#0079BF" },
+    { "type": "color", "value": "#00C2E0" },
+    { "type": "color", "value": "#51E898" },
+    { "type": "color", "value": "#FF78CB" },
+    { "type": "color", "value": "#344563" },
+    { "type": "color", "value": "#B04632" },
+    { "type": "color", "value": "#89609E" },
+    { "type": "color", "value": "#CD5A91" },
+    { "type": "color", "value": "#4BBF6B" },
+    { "type": "image", "value": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f" },
+    { "type": "image", "value": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e" },
+    { "type": "image", "value": "https://images.unsplash.com/photo-1518837695005-2083093ee35b" },
+    { "type": "image", "value": "https://images.unsplash.com/photo-1493558103817-58b2924bce98" },
+    { "type": "image", "value": "https://images.unsplash.com/photo-1503264116251-35a269479413" }
+  ]
+}

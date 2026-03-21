@@ -1,0 +1,7 @@
+Microsoft.EntityFrameworkCore.Tools (9.0.7)
+Microsoft.EntityFrameworkCore (9.0.7)
+Microsoft.EntityFrameworkCore.SqlServer (9.0.7)
+Microsoft.Data.SqlClient (6.0.2)
+HotChocolate.AspNetCore (15.1.7)
+HotChocolate.AspNetCore.Playground ()
+https://www.youtube.com/watch?v=iOQ74eYU2U4&list=PLA8ZIAm2I03g9z705U3KWJjTv0Nccw9pj

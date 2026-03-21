@@ -1,0 +1,9 @@
+
+* Thống kê những giá đã từng bán ra của một sản phẩm (với @maSP là tham số vào)
+* Thống kê những sản phẩm có giá bán trong đoạn [@min,@max] với @min và @max là 2 tham số vào (sắp xếp giảm dần theo giá, tang dần theo mã sản phẩm)
+* Tăng tự động các column ID cho tất cả các table được sinh từ thực thể mạnh (giải thích ở slide sau)
+* Thống kê các sản phẩm bán chạy (có tham số vào là số các sản phẩm cần thống kê)
+* Thống kê những tháng có doanh thu trên một giá trị định mức nào đó (định mức là tham số vào)
+* Thống kê giá trung bình, giá max, giá min ở các phiếu nhập hàng cho mỗi sản phẩm
+* Thống kê số lần khách hàng mua hàng (sắp xếp giảm dần)
+* Thống kê số lượng khách mua hàng theo từng tỉnh/thành phố (sắp xếp giảm dần theo số lượng, tang dần theo mã khách hàng)

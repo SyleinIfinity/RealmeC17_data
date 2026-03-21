@@ -1,0 +1,129 @@
+
+PHẦN 1. TỔNG QUAN DỰ ÁN NỀN TẢNG CHAT & GỬI HỒNG BAO ĐA NĂNG
+(Phục vụ thuyết trình – hướng đến khách hàng & nhà đầu tư, không chuyên kỹ thuật)
+
+----------------------------------------------------------------
+
+1. GIỚI THIỆU CHUNG
+
+Tên dự án (đề xuất):
+NỀN TẢNG GIAO TIẾP SỐ & QUÀ TẶNG SỐ (CHAT & HỒNG BAO ĐIỆN TỬ)
+
+Trong thời đại số, giao tiếp trực tuyến đã trở thành nhu cầu thiết yếu của cá nhân, gia đình, tổ chức và doanh nghiệp. Tuy nhiên, các nền tảng hiện nay như Zalo, Facebook Messenger hay iMessage thường chỉ tập trung vào nhắn tin, trong khi các hoạt động mang tính gắn kết văn hoá – tài chính như tặng quà, gửi tiền mừng, lì xì, hồng bao… lại bị phân tán trên các nền tảng khác nhau.
+
+Dự án này được xây dựng như một sản phẩm thực tế, có khả năng thương mại hoá, nhằm kết hợp:
+- Giao tiếp (Chat)
+- Giao dịch nhỏ mang tính cảm xúc (Hồng bao, quà tặng số)
+- Mạng lưới xã hội cá nhân & nhóm
+
+Tất cả được tích hợp trong một hệ sinh thái duy nhất, dễ dùng cho mọi đối tượng.
+
+----------------------------------------------------------------
+
+2. VẤN ĐỀ THỰC TẾ CỦA KHÁCH HÀNG
+
+Khách hàng hiện nay đang gặp các vấn đề sau:
+- Phải sử dụng nhiều ứng dụng khác nhau để:
+  + Nhắn tin
+  + Chuyển tiền
+  + Gửi quà mừng, lì xì, hồng bao
+- Trải nghiệm rời rạc, thiếu tính cảm xúc và cá nhân hoá
+- Doanh nghiệp, cộng đồng khó tổ chức các hoạt động gắn kết online (sự kiện, mừng lễ, tri ân)
+
+Ví dụ:
+- Dịp Tết: chat một app, chuyển tiền app khác
+- Nhóm lớp, nhóm công ty: muốn mừng sinh nhật, khen thưởng nhưng không có công cụ phù hợp
+- Doanh nghiệp: muốn gửi quà, thưởng nhỏ cho nhân viên nhưng quy trình phức tạp
+
+----------------------------------------------------------------
+
+3. MỤC TIÊU DỰ ÁN (GÓC ĐỘ SẢN PHẨM & KINH DOANH)
+
+Dự án hướng đến các mục tiêu sau:
+
+3.1 Mục tiêu về người dùng
+- Cung cấp một nền tảng:
+  + Dễ sử dụng
+  + Thân thiện với mọi lứa tuổi
+  + Không yêu cầu kiến thức công nghệ
+- Giúp người dùng:
+  + Giao tiếp nhanh chóng
+  + Thể hiện sự quan tâm thông qua quà tặng số
+  + Gắn kết mối quan hệ cá nhân và tập thể
+
+3.2 Mục tiêu về thị trường
+- Hướng đến:
+  + Cá nhân (gia đình, bạn bè)
+  + Nhóm (lớp học, công ty, cộng đồng)
+  + Doanh nghiệp vừa và nhỏ
+- Có thể triển khai tại thị trường Việt Nam và mở rộng quốc tế (đặc biệt các nước châu Á có văn hoá lì xì)
+
+3.3 Mục tiêu kinh doanh
+- Xây dựng sản phẩm:
+  + Có khả năng bán dịch vụ
+  + Thu phí từ các tính năng nâng cao
+  + Hợp tác với đối tác thanh toán, thương mại điện tử
+- Tạo nền tảng để phát triển thêm:
+  + Ví điện tử
+  + Mini game
+  + Quà tặng thương hiệu
+
+----------------------------------------------------------------
+
+4. ĐỐI TƯỢNG KHÁCH HÀNG MỤC TIÊU
+
+4.1 Cá nhân
+- Người trẻ (18–35 tuổi): sử dụng chat hằng ngày, quen thanh toán số
+- Gia đình: gửi tiền, quà tặng cho người thân
+- Người lớn tuổi: cần giao diện đơn giản, dễ hiểu
+
+4.2 Nhóm & cộng đồng
+- Nhóm lớp học
+- Nhóm công ty, team dự án
+- Cộng đồng online
+
+4.3 Doanh nghiệp
+- Doanh nghiệp nhỏ & vừa
+- Startup
+- Đơn vị tổ chức sự kiện, giáo dục
+
+----------------------------------------------------------------
+
+5. GIÁ TRỊ MANG LẠI CHO KHÁCH HÀNG
+
+Dự án mang lại các giá trị nổi bật:
+
+- Một ứng dụng – nhiều nhu cầu
+- Tăng tính gắn kết cảm xúc trong giao tiếp số
+- Tiết kiệm thời gian và chi phí
+- Dễ mở rộng và cá nhân hoá theo từng nhóm người dùng
+
+----------------------------------------------------------------
+
+6. ĐỊNH HƯỚNG THƯƠNG MẠI HOÁ
+
+Sản phẩm được định hướng là một nền tảng kinh doanh lâu dài:
+
+- Mô hình Freemium:
+  + Miễn phí chat cơ bản
+  + Trả phí cho các tính năng nâng cao
+- Thu phí dịch vụ hồng bao doanh nghiệp
+- Hợp tác với ngân hàng, ví điện tử
+- Phát triển hệ sinh thái dịch vụ số trong tương lai
+
+----------------------------------------------------------------
+
+7. Ý NGHĨA CỦA DỰ ÁN TRONG BÁO CÁO MÔN HỌC
+
+Trong phạm vi môn Quản trị dự án Công nghệ thông tin, dự án này được sử dụng như:
+- Một dự án CNTT thực tế
+- Có đầy đủ yếu tố:
+  + Sản phẩm
+  + Khách hàng
+  + Thị trường
+  + Quản trị dự án
+
+Toàn bộ nội dung báo cáo dựa trên giả định:
+DỰ ÁN LÀ SẢN PHẨM THẬT – KHÔNG PHẢI BÀI TẬP GIẢ ĐỊNH.
+
+----------------------------------------------------------------

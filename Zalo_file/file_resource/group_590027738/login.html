@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechParts - Đăng Nhập</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <i class="bi bi-cpu-fill text-primary fs-3 me-2"></i>
+                    <span class="fw-bold fs-4">TechParts</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-4">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cấu hình</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Hỗ trợ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="promotions.html">Khuyến Mãi</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <div class="search-box me-3">
+                            <i class="bi bi-search"></i>
+                            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                        </div>
+                        <a href="#" class="text-dark me-3"><i class="bi bi-person fs-5"></i></a>
+                        <a href="#" class="text-dark position-relative">
+                            <i class="bi bi-cart3 fs-5"></i>
+                            <span class="cart-badge">2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100 py-5">
+                <div class="col-lg-10">
+                    <div class="row bg-white rounded-4 shadow-lg overflow-hidden">
+                        <div class="col-lg-6 p-5">
+                            <h2 class="fw-bold mb-4">Chào Mừng Đến TechParts</h2>
+                            
+                            <ul class="nav nav-tabs border-0 mb-4" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active login-tab" data-bs-toggle="tab" href="#login">Đăng Nhập</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link login-tab" data-bs-toggle="tab" href="#register">Tạo Tài Khoản</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <!-- TAB ĐĂNG NHẬP -->
+                                <div class="tab-pane fade show active" id="login">
+                                    <div class="mb-4">
+                                        <label class="form-label fw-semibold">Email hoặc Số Điện Thoại</label>
+                                        <input type="text" class="form-control form-control-lg" placeholder="Nhập email hoặc số điện thoại của bạn">
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label class="form-label fw-semibold">Mật Khẩu</label>
+                                        <div class="password-input">
+                                            <input type="password" class="form-control form-control-lg" placeholder="Nhập mật khẩu của bạn">
+                                            <i class="bi bi-eye password-toggle"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="remember">
+                                            <label class="form-check-label" for="remember">Ghi Nhớ Tôi</label>
+                                        </div>
+                                        <a href="#" class="text-primary text-decoration-none">Quên Mật Khẩu?</a>
+                                    </div>
+
+                                    <button class="btn btn-primary btn-lg w-100 mb-4">Đăng Nhập</button>
+
+                                    <div class="divider mb-4">
+                                        <span>Hoặc tiếp tục với</span>
+                                    </div>
+
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <button class="btn btn-outline-secondary btn-lg w-100">
+                                                <i class="bi bi-google me-2"></i>Google
+                                            </button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn btn-outline-secondary btn-lg w-100">
+                                                <i class="bi bi-facebook me-2"></i>Facebook
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TAB ĐĂNG KÝ -->
+                                <div class="tab-pane fade" id="register">
+                                    <form id="registerForm" novalidate>
+                                        <div class="mb-3">
+                                            <label class="form-label fw-semibold">Họ Và Tên <span class="text-danger">*</span></label>
+                                            <input type="text" name="hoTen" class="form-control form-control-lg" placeholder="Nhập họ và tên của bạn" required>
+                                            <div class="invalid-feedback">Vui lòng nhập họ và tên</div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-semibold">Số Điện Thoại <span class="text-danger">*</span></label>
+                                            <input type="tel" name="soDienThoai" class="form-control form-control-lg" placeholder="Nhập số điện thoại của bạn" pattern="[0-9]{10,11}" required>
+                                            <div class="invalid-feedback">Vui lòng nhập số điện thoại hợp lệ (10-11 chữ số)</div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+                                            <input type="email" name="email" class="form-control form-control-lg" placeholder="Nhập email của bạn" required>
+                                            <div class="invalid-feedback">Vui lòng nhập email hợp lệ</div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-semibold">Tên Đăng Nhập <span class="text-danger">*</span></label>
+                                            <input type="text" name="tenDangNhap" class="form-control form-control-lg" placeholder="Chọn tên đăng nhập" minlength="4" required>
+                                            <div class="invalid-feedback">Tên đăng nhập phải có ít nhất 4 ký tự</div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label fw-semibold">Mật Khẩu <span class="text-danger">*</span></label>
+                                            <div class="password-input">
+                                                <input type="password" name="matKhau" id="matKhau" class="form-control form-control-lg" placeholder="Tạo mật khẩu" minlength="6" required>
+                                                <i class="bi bi-eye password-toggle"></i>
+                                            </div>
+                                            <div class="invalid-feedback">Mật khẩu phải có ít nhất 6 ký tự</div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-semibold">Xác Nhận Mật Khẩu <span class="text-danger">*</span></label>
+                                            <div class="password-input">
+                                                <input type="password" name="xacNhanMatKhau" id="xacNhanMatKhau" class="form-control form-control-lg" placeholder="Nhập lại mật khẩu" required>
+                                                <i class="bi bi-eye password-toggle"></i>
+                                            </div>
+                                            <div class="invalid-feedback">Mật khẩu xác nhận không khớp</div>
+                                        </div>
+
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                                            <label class="form-check-label" for="agreeTerms">
+                                                Tôi đồng ý với <a href="#" class="text-primary">Điều khoản dịch vụ</a> và <a href="#" class="text-primary">Chính sách bảo mật</a>
+                                            </label>
+                                            <div class="invalid-feedback">Bạn phải đồng ý với điều khoản để tiếp tục</div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary btn-lg w-100 mb-4">Tạo Tài Khoản</button>
+                                    </form>
+
+                                    <div class="divider mb-4">
+                                        <span>Hoặc đăng ký với</span>
+                                    </div>
+
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <button class="btn btn-outline-secondary btn-lg w-100">
+                                                <i class="bi bi-google me-2"></i>Google
+                                            </button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn btn-outline-secondary btn-lg w-100">
+                                                <i class="bi bi-facebook me-2"></i>Facebook
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 p-0">
+                            <div class="login-image-section">
+                                <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800" alt="Circuit Board">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title mb-3">TechParts</h5>
+                    <p class="footer-text">Cửa hàng một điểm dừng của bạn cho các linh kiện điện tử.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title mb-3">Dịch Vụ Khách Hàng</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Liên Hệ</a></li>
+                        <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                        <li><a href="#">Vận Chuyển & Trả Hàng</a></li>
+                        <li><a href="#">Theo Dõi Đơn Hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title mb-3">Thông Tin Công Ty</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Về Chúng Tôi</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Chương Trình Đối Tác</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title mb-3">Tài Khoản Của Tôi</h5>
+                    <ul class="footer-links">
+                        <li><a href="login.html">Đăng Nhập / Đăng Ký</a></li>
+                        <li><a href="#">Lịch Sử Đơn Hàng</a></li>
+                        <li><a href="#">Danh Sách Yêu Thích</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4 border-top">
+                <div class="col-md-6">
+                    <p class="footer-text mb-0">Theo Dõi Chúng Tôi</p>
+                    <div class="social-links mt-2">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="footer-text mb-0">Đăng ký nhận bản tin để nhận thông tin về ưu đãi và tin tức công nghệ mới nhất.</p>
+                    <div class="newsletter-form mt-2">
+                        <input type="email" placeholder="Nhập email của bạn">
+                        <button class="btn btn-primary">Đăng Ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="mb-0 text-center">© 2024 TechParts. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

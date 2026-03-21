@@ -1,0 +1,49 @@
+﻿* Đưa ra danh sách hóa đơn
+Số hóa đơn, tên hàng, giá bán, số lượng, thành tiền
+của những hóa đơn có số lượng bán trên 150
+và sắp sếp thành tiền theo tứ tự giảm dần
+Select shd, tenhg, giaban, slg, giaban*slg As ThanhTien
+From HOADONBH hd, Hang hg
+Where (hd.mahg = hg.mahg) and slg>150
+Order by -(giaban*slg)
+* Đưa ra màn hình danh sách những sinh viên khóa 12
+Select masv, ten, malop
+From SVIEN
+Where malop Like "12*"
+Where left(malop,2) = "12"
+* Đưa ra màn hình danh sách những sinh viên lớp T2
+Select masv, ten, malop
+From SVIEN
+Where malop Like "*T2"
+* Đưa ra màn hình danh sách những sinh viên tên có 3 kí tự
+Select masv, ten, malop
+From SVIEN
+Where ten Like "???"
+* Đưa ra danh sách sinh viên chưa nhậpngày sinh
+Select masv, ten, ngsinh
+From SVIEN
+Where ngsinh is Null
+* Cho biết tổng số tiền học bổng phát cho sinh viên'
+Select Sum(hbong) As TongHB
+From SVIEN
+* Cho biết tổng số tiền học bổng phát cho sinh viên khóa 12
+Select sum(hbong)
+From SVIEN
+Where left(malop,2) = "12"
+* Cho biết tổng số sinh viên của khóa 12
+Select count(masv)
+From SVIEN
+Where left(malop,2) = "12"
+* Cho biết tổng tiền hàng bán được
+Select Sum(slg*giaban)
+From HOADONBH hd, Hang hg
+Where (hd.mahg = hg.mahg) 
+* Cho biết số tiền học bổng của từng lớp
+Select malop , sum(hbong) As HocBong
+From SVIEN
+Group by malop
+* Cho biết số tiền học bổng của các lớp có học bổng
+Select malop , sum(hbong) As HocBong
+From SVIEN
+Group by malop Having sum(hbong)>0
+

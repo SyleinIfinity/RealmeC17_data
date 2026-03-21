@@ -1,0 +1,1246 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "FCFlowchart",
+			"_id": "AAAAAAGVLhbb76x5C38=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Flowchart1",
+			"ownedElements": [
+				{
+					"_type": "FCFlowchartDiagram",
+					"_id": "AAAAAAGVLhbb76x6hnQ=",
+					"_parent": {
+						"$ref": "AAAAAAGVLhbb76x5C38="
+					},
+					"name": "học bổng bên ngoài",
+					"ownedViews": [
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAGVLhkqgqyj3Wc=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"fillColor": "#6dffb6",
+							"font": "Arial;13;0",
+							"left": 104,
+							"top": 112,
+							"width": 465,
+							"height": 113
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGVLhlO4qyoFH4=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"left": 120,
+							"top": 120,
+							"width": 89,
+							"height": 38,
+							"text": "Phòng CTSV"
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVLhm9aqywPqY=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLhm9aqyuJ24="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVLhm9aqyx5Jk=",
+									"_parent": {
+										"$ref": "AAAAAAGVLhm9aqywPqY="
+									},
+									"font": "Arial;13;0",
+									"left": 306,
+									"top": 130,
+									"width": 61,
+									"height": 78,
+									"text": "Thông báo xét nộp hồ sơ học bổng từ bên ngoài",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 296,
+							"top": 120,
+							"width": 81,
+							"height": 98,
+							"nameLabel": {
+								"$ref": "AAAAAAGVLhm9aqyx5Jk="
+							}
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAGVLhvAQ6zFkdo=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"fillColor": "#ffadad",
+							"font": "Arial;13;0",
+							"left": 104,
+							"top": 272,
+							"width": 464,
+							"height": 113
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGVLhx1kqzVoSU=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"left": 120,
+							"top": 280,
+							"width": 88,
+							"height": 25,
+							"text": "Sinh Viên"
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVLh0mcqzeNvE=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLh0mcqzcDzI="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVLh0mcqzfaxc=",
+									"_parent": {
+										"$ref": "AAAAAAGVLh0mcqzeNvE="
+									},
+									"font": "Arial;13;0",
+									"left": 330,
+									"top": 314,
+									"width": 60,
+									"height": 26,
+									"text": "Nộp hồ sơ",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 320,
+							"top": 304,
+							"width": 80,
+							"height": 48,
+							"nameLabel": {
+								"$ref": "AAAAAAGVLh0mcqzfaxc="
+							}
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGVLh1w+6zubqc=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"left": 184,
+							"top": 312,
+							"width": 89,
+							"height": 41,
+							"text": "Minh chứng học tập, ..."
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAGVLh1w/qzxCU0=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVLh1w+6zubqc="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVLh0mcqzeNvE="
+							},
+							"lineStyle": 1,
+							"points": "319:329;273:330"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAGVLh+8W60hEI4=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"fillColor": "#6dffb6",
+							"font": "Arial;13;0",
+							"showShadow": false,
+							"left": 104,
+							"top": 456,
+							"width": 465,
+							"height": 137
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAGVLiGBg61XeS4=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLiGBg61V3G8="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVLiGBg61YFiA=",
+									"_parent": {
+										"$ref": "AAAAAAGVLiGBg61XeS4="
+									},
+									"font": "Arial;13;0",
+									"left": 452.542236328125,
+									"top": 480.25,
+									"width": 57.08447265625,
+									"height": 16.5,
+									"text": "Hạn nộp",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 424,
+							"top": 472,
+							"width": 114.1689453125,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGVLiGBg61YFiA="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVLiGBj61fUYU=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLiGBj61d2Vw="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVLiGBj61g+3A=",
+									"_parent": {
+										"$ref": "AAAAAAGVLiGBj61fUYU="
+									},
+									"model": {
+										"$ref": "AAAAAAGVLiGBj61d2Vw="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 495,
+									"top": 327,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVLiGBj61fUYU="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVLiGBg61XeS4="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVLh0mcqzeNvE="
+							},
+							"lineStyle": 2,
+							"points": "399:334;480:334;480:472",
+							"nameLabel": {
+								"$ref": "AAAAAAGVLiGBj61g+3A="
+							}
+						},
+						{
+							"_type": "FCDecisionView",
+							"_id": "AAAAAAGVLiOPg6195FQ=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLiOPg617AjY="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVLiOPg61+R9g=",
+									"_parent": {
+										"$ref": "AAAAAAGVLiOPg6195FQ="
+									},
+									"font": "Arial;13;0",
+									"left": 324.542236328125,
+									"top": 515.5,
+									"width": 57.08447265625,
+									"height": 39,
+									"text": "Kiểm tra hồ sơ học sinh",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 296,
+							"top": 496,
+							"width": 114.1689453125,
+							"height": 78,
+							"nameLabel": {
+								"$ref": "AAAAAAGVLiOPg61+R9g="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVLiOPkK2FKQA=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLiOPkK2DGc8="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVLiOPkK2G5pU=",
+									"_parent": {
+										"$ref": "AAAAAAGVLiOPkK2FKQA="
+									},
+									"model": {
+										"$ref": "AAAAAAGVLiOPkK2DGc8="
+									},
+									"font": "Arial;13;0",
+									"left": 448,
+									"top": 536,
+									"width": 23.84814453125,
+									"height": 13,
+									"alpha": 0.36397911492555135,
+									"distance": 22.47220505424423,
+									"hostEdge": {
+										"$ref": "AAAAAAGVLiOPkK2FKQA="
+									},
+									"edgePosition": 1,
+									"text": "Còn"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVLiOPg6195FQ="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVLiGBg61XeS4="
+							},
+							"lineStyle": 2,
+							"points": "480:504;480:534;409:534",
+							"nameLabel": {
+								"$ref": "AAAAAAGVLiOPkK2G5pU="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVLiU+e62vs+w=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLiU+eq2taGc="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVLiU+e62w/js=",
+									"_parent": {
+										"$ref": "AAAAAAGVLiU+e62vs+w="
+									},
+									"model": {
+										"$ref": "AAAAAAGVLiU+eq2taGc="
+									},
+									"font": "Arial;13;0",
+									"left": 271,
+									"top": 416,
+									"width": 73.00439453125,
+									"height": 13,
+									"alpha": -4.735112207500066,
+									"distance": 44.01136216933077,
+									"hostEdge": {
+										"$ref": "AAAAAAGVLiU+e62vs+w="
+									},
+									"edgePosition": 1,
+									"text": "Không duyệt"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVLh0mcqzeNvE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVLiOPg6195FQ="
+							},
+							"lineStyle": 2,
+							"points": "352:496;352:351",
+							"nameLabel": {
+								"$ref": "AAAAAAGVLiU+e62w/js="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVLibMLa30kI0=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLibMLa3yMI8="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVLibMLa31TkY=",
+									"_parent": {
+										"$ref": "AAAAAAGVLibMLa30kI0="
+									},
+									"model": {
+										"$ref": "AAAAAAGVLibMLa3yMI8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 366,
+									"top": 253,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVLibMLa30kI0="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVLh0mcqzeNvE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVLhm9aqywPqY="
+							},
+							"lineStyle": 2,
+							"points": "352:217;352:304",
+							"nameLabel": {
+								"$ref": "AAAAAAGVLibMLa31TkY="
+							}
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGVLieY264Jh9E=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"left": 120,
+							"top": 464,
+							"width": 88,
+							"height": 32,
+							"text": "Phòng CTSV"
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVLigU2q4rWRg=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLigU2q4pwBU="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVLigU2q4sGDg=",
+									"_parent": {
+										"$ref": "AAAAAAGVLigU2q4rWRg="
+									},
+									"font": "Arial;13;0",
+									"left": 186,
+									"top": 514,
+									"width": 29.630859375,
+									"height": 26,
+									"text": "Tổng hợp",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 176,
+							"top": 504,
+							"width": 49.630859375,
+							"height": 57,
+							"nameLabel": {
+								"$ref": "AAAAAAGVLigU2q4sGDg="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVLimxva5hOn0=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLimxvK5flZg="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVLimxva5ivOE=",
+									"_parent": {
+										"$ref": "AAAAAAGVLimxva5hOn0="
+									},
+									"model": {
+										"$ref": "AAAAAAGVLimxvK5flZg="
+									},
+									"font": "Arial;13;0",
+									"left": 243,
+									"top": 545,
+									"width": 33.9599609375,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVLimxva5hOn0="
+									},
+									"edgePosition": 1,
+									"text": "Duyệt"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVLigU2q4rWRg="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVLiOPg6195FQ="
+							},
+							"lineStyle": 2,
+							"points": "296:536;225:536",
+							"nameLabel": {
+								"$ref": "AAAAAAGVLimxva5ivOE="
+							}
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAGVLitFe65+zh0=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"left": 32,
+							"top": 488,
+							"width": 65,
+							"height": 90,
+							"text": "Danh sách sinh viên đủ điều kiện"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAGVLitFgK6BcWk=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVLitFe65+zh0="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVLigU2q4rWRg="
+							},
+							"lineStyle": 1,
+							"points": "175:532;97:532"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAGVLiwqJa6JBYA=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"fillColor": "#d6adff",
+							"font": "Arial;13;0",
+							"left": 104,
+							"top": 656,
+							"width": 465,
+							"height": 113
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGVLizT3K6SfSo=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"left": 104,
+							"top": 664,
+							"width": 96,
+							"height": 40,
+							"text": "Hội đồng xét cấp học bổng"
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVLi2FU66brtA=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLi2FU66ZDKo="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVLi2FU66cN4M=",
+									"_parent": {
+										"$ref": "AAAAAAGVLi2FU66brtA="
+									},
+									"font": "Arial;13;0",
+									"left": 258,
+									"top": 682,
+									"width": 61,
+									"height": 65,
+									"text": "Họp hội đồng xét cấp HB cấp trường",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 248,
+							"top": 672,
+							"width": 81,
+							"height": 85,
+							"nameLabel": {
+								"$ref": "AAAAAAGVLi2FU66cN4M="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVLi2FY66j4lc=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVLi2FY66hbZ8="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVLi2FY66kUwA=",
+									"_parent": {
+										"$ref": "AAAAAAGVLi2FY66j4lc="
+									},
+									"model": {
+										"$ref": "AAAAAAGVLi2FY66hbZ8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 208,
+									"top": 667,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVLi2FY66j4lc="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVLi2FU66brtA="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVLigU2q4rWRg="
+							},
+							"lineStyle": 2,
+							"points": "208:560;208:688;248:688",
+							"nameLabel": {
+								"$ref": "AAAAAAGVLi2FY66kUwA="
+							}
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAGVLi5SDa6xHeI=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"fillColor": "#6dffb6",
+							"font": "Arial;13;0",
+							"left": 104,
+							"top": 856,
+							"width": 465,
+							"height": 145
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGVLjALfa6+qJw=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"left": 120,
+							"top": 864,
+							"width": 64,
+							"height": 16
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGVLl59ms5uha4=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"left": 112,
+							"top": 864,
+							"width": 89,
+							"height": 25,
+							"text": "Phòng CTSV"
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAGVLmo4DM+NtjI=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"fillColor": "#91ffec",
+							"font": "Arial;13;0",
+							"left": 104,
+							"top": 1072,
+							"width": 472,
+							"height": 104
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGVLmqMUs+U1l0=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"left": 112,
+							"top": 1080,
+							"width": 97,
+							"height": 38,
+							"text": "Đơn vị tài trợ"
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVUoXS+43mXcQ=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVUoXS+43kcp0="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVUoXS+43nfTM=",
+									"_parent": {
+										"$ref": "AAAAAAGVUoXS+43mXcQ="
+									},
+									"font": "Arial;13;0",
+									"left": 226,
+									"top": 890,
+									"width": 125,
+									"height": 52,
+									"text": "Lập danh sách sinh viên chính thức nhận học bổng từ bên ngoài ",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 216,
+							"top": 880,
+							"width": 145,
+							"height": 81,
+							"nameLabel": {
+								"$ref": "AAAAAAGVUoXS+43nfTM="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVUoXTCo3u2H4=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVUoXTCo3s46E="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVUoXTCo3vpNM=",
+									"_parent": {
+										"$ref": "AAAAAAGVUoXTCo3u2H4="
+									},
+									"model": {
+										"$ref": "AAAAAAGVUoXTCo3s46E="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 301,
+									"top": 811,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVUoXTCo3u2H4="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVUoXS+43mXcQ="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVLi2FU66brtA="
+							},
+							"lineStyle": 2,
+							"points": "287:756;287:880",
+							"nameLabel": {
+								"$ref": "AAAAAAGVUoXTCo3vpNM="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGVUofZ0Y5+xRM=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVUofZ0Y58E+g="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVUofZ0Y5/1wk=",
+									"_parent": {
+										"$ref": "AAAAAAGVUofZ0Y5+xRM="
+									},
+									"font": "Arial;13;0",
+									"left": 250,
+									"top": 1106,
+									"width": 85,
+									"height": 39,
+									"text": "Phê duyệt, trao học bổng cho sinh viên",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 240,
+							"top": 1096,
+							"width": 105,
+							"height": 59,
+							"nameLabel": {
+								"$ref": "AAAAAAGVUofZ0Y5/1wk="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVUofZ346G+i8=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVUofZ346ES5U="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVUofZ346HwAo=",
+									"_parent": {
+										"$ref": "AAAAAAGVUofZ346G+i8="
+									},
+									"model": {
+										"$ref": "AAAAAAGVUofZ346ES5U="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 302,
+									"top": 1021,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVUofZ346G+i8="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVUofZ0Y5+xRM="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVUoXS+43mXcQ="
+							},
+							"lineStyle": 2,
+							"points": "288:960;288:1096",
+							"nameLabel": {
+								"$ref": "AAAAAAGVUofZ346HwAo="
+							}
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGVUozS3o6ZFfc=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"font": "Arial;13;0",
+							"lineStyle": 1,
+							"points": "16:1240;16:1240"
+						},
+						{
+							"_type": "FCTerminatorView",
+							"_id": "AAAAAAGVUo/q/Y7Ll60=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVUo/q/Y7JVZ4="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGVUo/q/o7M/RM=",
+									"_parent": {
+										"$ref": "AAAAAAGVUo/q/Y7Ll60="
+									},
+									"font": "Arial;13;0",
+									"left": 258,
+									"top": 1234,
+									"width": 84,
+									"height": 13,
+									"text": "End",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 248,
+							"top": 1224,
+							"width": 104,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGVUo/q/o7M/RM="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVUpBM347WY04=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVUpBM347Unhk="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVUpBM347XpII=",
+									"_parent": {
+										"$ref": "AAAAAAGVUpBM347WY04="
+									},
+									"model": {
+										"$ref": "AAAAAAGVUpBM347Unhk="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 306,
+									"top": 1182,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGVUpBM347WY04="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVUo/q/Y7Ll60="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVUofZ0Y5+xRM="
+							},
+							"lineStyle": 2,
+							"points": "292:1154;292:1224",
+							"nameLabel": {
+								"$ref": "AAAAAAGVUpBM347XpII="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGVUpD8fY7gB3Q=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhbb76x6hnQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGVUpD8fI7ekOQ="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGVUpD8fY7h1gY=",
+									"_parent": {
+										"$ref": "AAAAAAGVUpD8fY7gB3Q="
+									},
+									"model": {
+										"$ref": "AAAAAAGVUpD8fI7ekOQ="
+									},
+									"font": "Arial;13;0",
+									"left": 536,
+									"top": 479,
+									"width": 23.841796875,
+									"height": 13,
+									"alpha": -2.9204041685387203,
+									"distance": 387.43902746109615,
+									"hostEdge": {
+										"$ref": "AAAAAAGVUpD8fY7gB3Q="
+									},
+									"edgePosition": 1,
+									"text": "Hết "
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGVUo/q/Y7Ll60="
+							},
+							"tail": {
+								"$ref": "AAAAAAGVLiGBg61XeS4="
+							},
+							"lineStyle": 2,
+							"points": "537:488;632:488;632:1240;351:1240",
+							"nameLabel": {
+								"$ref": "AAAAAAGVUpD8fY7h1gY="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVLhm9aqyuJ24=",
+					"_parent": {
+						"$ref": "AAAAAAGVLhbb76x5C38="
+					},
+					"name": "Thông báo xét nộp hồ sơ học bổng từ bên ngoài",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVLibMLa3yMI8=",
+							"_parent": {
+								"$ref": "AAAAAAGVLhm9aqyuJ24="
+							},
+							"source": {
+								"$ref": "AAAAAAGVLhm9aqyuJ24="
+							},
+							"target": {
+								"$ref": "AAAAAAGVLh0mcqzcDzI="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVLh0mcqzcDzI=",
+					"_parent": {
+						"$ref": "AAAAAAGVLhbb76x5C38="
+					},
+					"name": "Nộp hồ sơ",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVLiGBj61d2Vw=",
+							"_parent": {
+								"$ref": "AAAAAAGVLh0mcqzcDzI="
+							},
+							"source": {
+								"$ref": "AAAAAAGVLh0mcqzcDzI="
+							},
+							"target": {
+								"$ref": "AAAAAAGVLiGBg61V3G8="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAGVLiGBg61V3G8=",
+					"_parent": {
+						"$ref": "AAAAAAGVLhbb76x5C38="
+					},
+					"name": "Hạn nộp",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVLiOPkK2DGc8=",
+							"_parent": {
+								"$ref": "AAAAAAGVLiGBg61V3G8="
+							},
+							"name": "Còn",
+							"source": {
+								"$ref": "AAAAAAGVLiGBg61V3G8="
+							},
+							"target": {
+								"$ref": "AAAAAAGVLiOPg617AjY="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVUpD8fI7ekOQ=",
+							"_parent": {
+								"$ref": "AAAAAAGVLiGBg61V3G8="
+							},
+							"name": "Hết ",
+							"source": {
+								"$ref": "AAAAAAGVLiGBg61V3G8="
+							},
+							"target": {
+								"$ref": "AAAAAAGVUo/q/Y7JVZ4="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDecision",
+					"_id": "AAAAAAGVLiOPg617AjY=",
+					"_parent": {
+						"$ref": "AAAAAAGVLhbb76x5C38="
+					},
+					"name": "Kiểm tra hồ sơ học sinh",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVLiU+eq2taGc=",
+							"_parent": {
+								"$ref": "AAAAAAGVLiOPg617AjY="
+							},
+							"name": "Không duyệt",
+							"source": {
+								"$ref": "AAAAAAGVLiOPg617AjY="
+							},
+							"target": {
+								"$ref": "AAAAAAGVLh0mcqzcDzI="
+							}
+						},
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVLimxvK5flZg=",
+							"_parent": {
+								"$ref": "AAAAAAGVLiOPg617AjY="
+							},
+							"name": "Duyệt",
+							"source": {
+								"$ref": "AAAAAAGVLiOPg617AjY="
+							},
+							"target": {
+								"$ref": "AAAAAAGVLigU2q4pwBU="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVLigU2q4pwBU=",
+					"_parent": {
+						"$ref": "AAAAAAGVLhbb76x5C38="
+					},
+					"name": "Tổng hợp",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVLi2FY66hbZ8=",
+							"_parent": {
+								"$ref": "AAAAAAGVLigU2q4pwBU="
+							},
+							"source": {
+								"$ref": "AAAAAAGVLigU2q4pwBU="
+							},
+							"target": {
+								"$ref": "AAAAAAGVLi2FU66ZDKo="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVLi2FU66ZDKo=",
+					"_parent": {
+						"$ref": "AAAAAAGVLhbb76x5C38="
+					},
+					"name": "Họp hội đồng xét cấp HB cấp trường",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVUoXTCo3s46E=",
+							"_parent": {
+								"$ref": "AAAAAAGVLi2FU66ZDKo="
+							},
+							"source": {
+								"$ref": "AAAAAAGVLi2FU66ZDKo="
+							},
+							"target": {
+								"$ref": "AAAAAAGVUoXS+43kcp0="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVUoXS+43kcp0=",
+					"_parent": {
+						"$ref": "AAAAAAGVLhbb76x5C38="
+					},
+					"name": "Lập danh sách sinh viên chính thức nhận học bổng từ bên ngoài ",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVUofZ346ES5U=",
+							"_parent": {
+								"$ref": "AAAAAAGVUoXS+43kcp0="
+							},
+							"source": {
+								"$ref": "AAAAAAGVUoXS+43kcp0="
+							},
+							"target": {
+								"$ref": "AAAAAAGVUofZ0Y58E+g="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGVUofZ0Y58E+g=",
+					"_parent": {
+						"$ref": "AAAAAAGVLhbb76x5C38="
+					},
+					"name": "Phê duyệt, trao học bổng cho sinh viên",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGVUpBM347Unhk=",
+							"_parent": {
+								"$ref": "AAAAAAGVUofZ0Y58E+g="
+							},
+							"source": {
+								"$ref": "AAAAAAGVUofZ0Y58E+g="
+							},
+							"target": {
+								"$ref": "AAAAAAGVUo/q/Y7JVZ4="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCTerminator",
+					"_id": "AAAAAAGVUo/q/Y7JVZ4=",
+					"_parent": {
+						"$ref": "AAAAAAGVLhbb76x5C38="
+					},
+					"name": "End"
+				}
+			]
+		}
+	]
+}

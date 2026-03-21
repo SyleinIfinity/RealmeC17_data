@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhân Viên - Hệ Thống Quản Lý</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- CSS Reset & Base --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { display: flex; height: 100vh; background-color: #f4f4f4; }
+
+        /* --- Sidebar --- */
+        .sidebar {
+            width: 260px; background-color: #6f42c1; color: white;
+            display: flex; flex-direction: column; padding: 20px; box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar h2 { margin-bottom: 40px; font-size: 22px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 20px; }
+        .menu-item {
+            padding: 15px 20px; color: #e0e0e0; text-decoration: none; border-radius: 8px;
+            margin-bottom: 10px; transition: all 0.3s; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: space-between;
+        }
+        .menu-item span { display: flex; align-items: center; gap: 10px; }
+        .menu-item:hover { background-color: #5a32a3; color: white; transform: translateX(5px); }
+        .menu-item.active { background-color: #ffffff; color: #6f42c1; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+        /* Badge trong menu */
+        .menu-badge { background-color: #dc3545; color: white; font-size: 11px; padding: 2px 8px; border-radius: 10px; }
+
+        /* --- Main Content --- */
+        .main-content { flex: 1; display: flex; flex-direction: column; overflow-y: auto; }
+
+        /* --- Header --- */
+        header {
+            background-color: #d1ecf1; padding: 15px 40px; display: flex;
+            justify-content: space-between; align-items: center; border-bottom: 1px solid #bee5eb;
+        }
+        .header-title { color: #0c5460; font-weight: bold; font-size: 20px; }
+        .header-right { display: flex; align-items: center; gap: 15px; }
+
+        .icon-btn {
+            position: relative; cursor: pointer; font-size: 18px; color: #0c5460; background: white;
+            width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center;
+            align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: 0.2s;
+        }
+        .icon-btn:hover { background-color: #17a2b8; color: white; transform: translateY(-2px); }
+        .icon-btn:hover::after {
+            content: attr(data-tooltip); position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%);
+            background: #333; color: white; padding: 4px 8px; border-radius: 4px; font-size: 11px; white-space: nowrap; z-index: 10;
+        }
+        .user-info { font-weight: 600; color: #0c5460; border-left: 1px solid #aad6df; padding-left: 20px; margin-left: 10px; }
+
+        /* --- Container --- */
+        .container { padding: 40px; }
+        .section { display: none; }
+        .section.active { display: block; animation: fadeIn 0.5s; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* --- Cards & Tables --- */
+        .card { background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 30px; position: relative; }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 2px solid #f0f0f0; }
+        .card-title { font-size: 20px; color: #333; font-weight: bold; }
+
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid #eee; vertical-align: middle; }
+        th { background-color: #f8f9fa; color: #555; font-weight: 600; text-transform: uppercase; font-size: 13px; }
+        tr:hover { background-color: #f9f9f9; }
+
+        /* --- Helpers & Badges --- */
+        .badge { padding: 5px 10px; border-radius: 20px; font-size: 11px; font-weight: bold; display: inline-block; }
+        .bg-info { background-color: #e3f2fd; color: #0d47a1; }
+        .bg-warning { background-color: #fff3e0; color: #e65100; }
+
+        .status-ChoXacNhan { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+        .status-DaXacNhan { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .status-DaHuy { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+        /* Typography */
+        .text-bold { font-weight: 600; color: #333; }
+        .text-muted { font-size: 12px; color: #777; margin-top: 3px; display: block; }
+        .text-price { color: #d63384; font-weight: bold; font-size: 14px; }
+        .text-ship { font-size: 11px; color: #666; font-style: italic; }
+
+        /* Inputs & Buttons */
+        input[type="number"], input[type="datetime-local"] { padding: 8px; border: 1px solid #ddd; border-radius: 5px; width: 100%; }
+        .btn { padding: 8px 12px; border: none; border-radius: 5px; cursor: pointer; font-weight: 600; font-size: 13px; color: white; margin-right: 5px; }
+        .btn-primary { background-color: #6f42c1; }
+        .btn-primary:hover { background-color: #5a32a3; }
+        .btn-approve { background-color: #28a745; }
+        .btn-reject { background-color: #dc3545; }
+
+        /* Style cho nút Đặt thủ công (Nằm trên Header) */
+        .btn-manual {
+            background-color: #17a2b8;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .btn-manual:hover {
+            background-color: #138496;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>NHÂN VIÊN</h2>
+        
+        <div id="menu-promotion" class="menu-item active" onclick="switchTab('tab-promotion', this)">
+            <span>🎉 Quản lý Ưu Đãi</span>
+        </div>
+
+        <div id="menu-orders" class="menu-item" onclick="switchTab('tab-orders', this)">
+            <span>📦 Xem Đơn Hàng</span>
+            <span class="menu-badge">3</span> </div>
+    </aside>
+
+    <div class="main-content">
+        <header>
+            <div class="header-title">Hệ Thống Quản Lý</div>
+            <div class="header-right">
+                <div class="icon-btn" onclick="chamCong()" data-tooltip="Chấm công ngay">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                
+                <div class="user-info">Xin chào, No Name :))) </div>
+            </div>
+        </header>
+
+        <div class="container">
+            
+            <div id="tab-promotion" class="section active">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">🎉 Quản Lý Chương Trình Khuyến Mãi</span>
+                        </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="15%">Code / Tên KM</th>
+                                <th width="15%">Mức Giảm</th>
+                                <th width="20%">Điều Kiện (Min/Max)</th>
+                                <th width="10%">SL Còn</th>
+                                <th width="25%">Thời Gian (Start - End)</th>
+                                <th width="15%">Tác vụ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="text-bold" style="color: #6f42c1;">SALE10</div>
+                                    <span class="text-muted">Giảm 10% đơn hàng</span>
+                                </td>
+                                <td>
+                                    <span class="badge bg-info">PERCENT</span>
+                                    <div class="text-bold">10%</div>
+                                </td>
+                                <td>
+                                    <div class="text-muted">Min Order: 500k</div>
+                                    <div class="text-muted">Max Giảm: 100k</div>
+                                </td>
+                                <td>
+                                    <input type="number" value="50" style="width: 60px;">
+                                </td>
+                                <td>
+                                    <input type="datetime-local" value="2025-12-01T00:00" style="margin-bottom: 5px;">
+                                    <input type="datetime-local" value="2025-12-05T23:59">
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary">Lưu</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="text-bold" style="color: #6f42c1;">TET2025</div>
+                                    <span class="text-muted">Lì xì Tết 50k</span>
+                                </td>
+                                <td>
+                                    <span class="badge bg-warning">DIRECT</span>
+                                    <div class="text-bold">50.000 ₫</div>
+                                </td>
+                                <td>
+                                    <div class="text-muted">Min Order: 0đ</div>
+                                    <div class="text-muted">Max Giảm: -</div>
+                                </td>
+                                <td>
+                                    <input type="number" value="100" style="width: 60px;">
+                                </td>
+                                <td>
+                                    <input type="datetime-local" value="2025-01-20T00:00" style="margin-bottom: 5px;">
+                                    <input type="datetime-local" value="2025-01-30T23:59">
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary">Lưu</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="tab-orders" class="section">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">📦 Quản Lý Đơn Đặt Hàng</span>
+                        <button class="btn btn-manual" onclick="manualOrder()">
+                            <i class="fa-solid fa-plus"></i> Đặt thủ công
+                        </button>
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="15%">Mã Đơn / Ngày</th>
+                                <th width="20%">Người Nhận & SĐT</th>
+                                <th width="25%">Địa Chỉ Giao Hàng</th>
+                                <th width="15%">Thanh Toán</th>
+                                <th width="10%">Trạng Thái</th>
+                                <th width="15%">Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="order-1">
+                                <td>
+                                    <div class="text-bold">DH-CODE123</div>
+                                    <span class="text-muted">04/12/2025</span>
+                                </td>
+                                <td>
+                                    <div class="text-bold">Nguyễn Văn A</div>
+                                    <div class="text-muted"><i class="fa-solid fa-phone"></i> 0905 123 456</div>
+                                </td>
+                                <td>
+                                    Số 1 Võ Văn Ngân, TP.Thủ Đức, TP.HCM
+                                </td>
+                                <td>
+                                    <div class="text-price">15.500.000 ₫</div>
+                                    <div class="text-ship">(Ship: 30.000 ₫)</div>
+                                </td>
+                                <td>
+                                    <span id="status-1" class="badge status-ChoXacNhan">ChoXacNhan</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-approve" title="Duyệt đơn" onclick="processOrder(1, 'approve')"><i class="fa-solid fa-check"></i></button>
+                                    <button class="btn btn-reject" title="Từ chối" onclick="processOrder(1, 'reject')"><i class="fa-solid fa-xmark"></i></button>
+                                </td>
+                            </tr>
+                            <tr id="order-2">
+                                <td>
+                                    <div class="text-bold">DH-CODE456</div>
+                                    <span class="text-muted">04/12/2025</span>
+                                </td>
+                                <td>
+                                    <div class="text-bold">Trần Thị B</div>
+                                    <div class="text-muted"><i class="fa-solid fa-phone"></i> 0912 333 444</div>
+                                </td>
+                                <td>
+                                    123 Lê Duẩn, Đà Nẵng
+                                </td>
+                                <td>
+                                    <div class="text-price">2.300.000 ₫</div>
+                                    <div class="text-ship">(Freeship)</div>
+                                </td>
+                                <td>
+                                    <span id="status-2" class="badge status-ChoXacNhan">ChoXacNhan</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-approve" title="Duyệt đơn" onclick="processOrder(2, 'approve')"><i class="fa-solid fa-check"></i></button>
+                                    <button class="btn btn-reject" title="Từ chối" onclick="processOrder(2, 'reject')"><i class="fa-solid fa-xmark"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabId, element) {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) sections[i].classList.remove('active');
+            var menuItems = document.getElementsByClassName('menu-item');
+            for (var i = 0; i < menuItems.length; i++) menuItems[i].classList.remove('active');
+            
+            document.getElementById(tabId).classList.add('active');
+            if (element) element.classList.add('active');
+        }
+
+        function chamCong() {
+            let today = new Date().toLocaleDateString('vi-VN');
+            alert("✅ Đã chấm công thành công cho ngày: " + today);
+        }
+
+        function processOrder(orderId, action) {
+            let statusSpan = document.getElementById('status-' + orderId);
+            let row = document.getElementById('order-' + orderId);
+
+            if (action === 'approve') {
+                if(confirm('Xác nhận DUYỆT đơn hàng này?')) {
+                    statusSpan.className = 'badge status-DaXacNhan';
+                    statusSpan.innerText = 'DaXacNhan';
+                    row.cells[5].innerHTML = '<span style="color:green; font-weight:bold;"><i class="fa-solid fa-check-circle"></i> Đã duyệt</span>';
+                }
+            } else if (action === 'reject') {
+                if(confirm('Bạn muốn TỪ CHỐI (Hủy) đơn hàng này?')) {
+                    statusSpan.className = 'badge status-DaHuy';
+                    statusSpan.innerText = 'DaHuy';
+                    row.cells[5].innerHTML = '<span style="color:red; font-weight:bold;"><i class="fa-solid fa-ban"></i> Đã hủy</span>';
+                }
+            }
+        }
+
+        function manualOrder() {
+            alert("🛠 Mở form tạo đơn hàng thủ công!");
+        }
+    </script>
+</body>
+</html>
